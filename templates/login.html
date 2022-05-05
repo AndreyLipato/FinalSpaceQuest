@@ -8,6 +8,18 @@
    body {
     background-image: url(../static/img/space.png);
     background-size: cover;
+    color: white;
+   }
+   input[type="submit"] {
+    background-color: transparent;
+    color: white;
+    border: 0.2em white solid;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    padding: 0.1em 0.5em;
+   }
+   input[type="submit"]:hover {
+    background-color: white;
    }
 {% endblock %}
 
@@ -17,7 +29,7 @@
     <form method="post">
         <input type="text" name="name" id="name" class="form-control" placeholder="Имя пользователя"><br>
         <input type="password" name="password" id="password" class="form-control" placeholder="Пароль"><br>
-        <input type="submit" class="btn btn-succsess" value="Войти" style="color:'red'">
+        <input type="submit" class="btn btn-succsess" value="Войти">
     </form>
 </div>
 {% endblock %}
