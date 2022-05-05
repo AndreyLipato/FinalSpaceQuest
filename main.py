@@ -70,7 +70,7 @@ def reg():
 
         con = sqlite3.connect('login.db')
         cur = con.cursor()
-        result = cur.execute("""SELECT name, id FROM user""").fetchall()
+        result = cur.execute("""SELECT name, id FROM User""").fetchall()
         for elem in result:
             now.append(elem[0])
             ids = elem[1]
