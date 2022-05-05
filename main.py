@@ -37,7 +37,7 @@ def login():
 
         con = sqlite3.connect('login.db')
         cur = con.cursor()
-        result = cur.execute("""SELECT name, password, id FROM user""").fetchall()
+        result = cur.execute("""SELECT name, password, id FROM User""").fetchall()
         for elem in result:
             name1 = elem[0]
             password1 = elem[1]
